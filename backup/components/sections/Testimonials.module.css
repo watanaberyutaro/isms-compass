@@ -1,0 +1,82 @@
+.section {
+  padding: 4rem 0;
+  background-color: var(--gray-50);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--gray-600);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonialCard {
+  height: 100%;
+}
+
+.testimonialHeader {
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--gray-200);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.company {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.role {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+.content {
+  color: var(--gray-700);
+  line-height: 1.75;
+  font-style: italic;
+}

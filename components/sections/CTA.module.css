@@ -1,0 +1,138 @@
+.section {
+  padding: 4rem 0;
+  background-color: var(--gray-50);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--gray-600);
+}
+
+.formContainer {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+}
+
+.required {
+  color: var(--red-500);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: var(--gray-50);
+}
+
+.input:hover,
+.textarea:hover {
+  border-color: var(--gray-300);
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  background-color: var(--white);
+  box-shadow: 0 0 0 4px rgba(46, 139, 192, 0.15);
+  transform: translateY(-1px);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.submitContainer {
+  text-align: center;
+}
+
+.submitButton {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .submitButton {
+    width: auto;
+  }
+}
+
+/* Success state */
+.successContainer {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.successIcon {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--green-100);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.successIconInner {
+  width: 2rem;
+  height: 2rem;
+  color: var(--green-600);
+}
+
+.successTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.successMessage {
+  color: var(--gray-600);
+}
